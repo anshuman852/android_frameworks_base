@@ -3692,6 +3692,36 @@ public final class Settings {
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
          * the setting value. See an example above.
+	     * Enable blocking wakelock
+	     * @hide
+	     */
+	   public static final String WAKELOCK_BLOCKING_ENABLED = "wakelock_blocking_enabled";
+
+	    /**
+	     * List of wakelock blocks selected
+	     * @hide
+	     */
+	   public static final String WAKELOCK_BLOCKING_LIST = "wakelock_blocking_list";
+
+        /**
+         * Immersive recents options
+         *
+         * 0 = Default AOSP look
+         * 1 = Statusbar only
+         * 2 = Navbar only
+         * 3 = Fullscreen
+         */
+        public static final String IMMERSIVE_RECENTS = "immersive_recents";
+
+          /**
+          * Whether to show the negociated charger current in the lockscreen
+          * @hide
+          */
+         public static final String LOCKSCREEN_CHARGING_CURRENT = "lockscreen_charging_current";
+ 
+        /**
+         * Whether to allow fullscreen screenshots or let the user select which area to screenshot
+         *
          */
 
         /**
